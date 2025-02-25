@@ -3,7 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>University Resource Hub</title>
+    <title>University Resource Hub | Notes, Assignments & Jobs</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="University Resource Hub - Get Notes, Previous Year Papers, Assignments, and Job Opportunities. Study smart with structured resources.">
+    <meta name="keywords" content="University Notes, Previous Year Papers, Assignments, Study Material, Job Portal, MCA Syllabus, College Resources">
+    <meta name="author" content="Ritu DPSingh">
+    
+    <!-- Open Graph (For Social Media Sharing) -->
+    <meta property="og:title" content="University Resource Hub">
+    <meta property="og:description" content="Find Notes, Previous Year Papers, Assignments, and Job Updates.">
+    <meta property="og:image" content="https://ritudpsingh.github.io/University-Resource-Hub/images/university-hub.jpg">
+    <meta property="og:url" content="https://ritudpsingh.github.io/University-Resource-Hub/">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:title" content="University Resource Hub">
+    <meta name="twitter:description" content="Find Notes, Previous Year Papers, Assignments, and Job Updates.">
+    <meta name="twitter:image" content="https://ritudpsingh.github.io/University-Resource-Hub/images/university-hub.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://ritudpsingh.github.io/University-Resource-Hub/">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -61,37 +85,17 @@
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
         }
-        .content-image {
+        img {
             width: 150px;
-            height: 100px;
+            height: auto;
             margin: 10px;
             cursor: pointer;
             border-radius: 5px;
             border: 1px solid #ccc;
             transition: 0.3s;
         }
-        .content-image:hover {
+        img:hover {
             transform: scale(1.05);
-        }
-        textarea {
-            width: 80%;
-            height: 100px;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        button {
-            background: #0073e6;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        button:hover {
-            background: #005bb5;
         }
         footer {
             background: #0073e6;
@@ -104,7 +108,7 @@
 </head>
 <body>
 
-    <header>University Resource Hub</header>
+    <header>📚 University Resource Hub</header>
 
     <nav>
         <ul>
@@ -112,66 +116,37 @@
             <li><a href="#previous-papers">📜 Previous Year Question Papers</a></li>
             <li><a href="#assignments">📝 Assignments</a></li>
             <li><a href="#job-portal">💼 Job Portal</a></li>
-            <li><a href="#query">❓ Post Your Query</a></li>
         </ul>
     </nav>
 
     <main>
         <section id="notes">
-            <h2>📖 Content</h2>
-           
-            <img src="file:///C:/Users/dell/Desktop/images/SEO-tutorial.jpeg" >
-            <h2>Search Engine Optimization Tutorial (SEO Tutorial)</h2>
-            <p>SEO (search engine optimization) is the practice of optimizing the performance of a website by changing its structure and content to increase its visibility and web traffic. It helps in improving the quality of your website and increases the viewer-to-customer conversion rate.
-                It is a crucial aspect of digital marketing that focuses on enhancing the visibility and ranking of a website in search engine results pages (SERPs). The primary goal of SEO is to drive organic (non-paid) traffic to a website by improving its relevance and authority in the eyes of search engines</p>
-                <a href="https://www.geeksforgeeks.org/search-engine-optimization-seo-basics/">more</a>
+            <h2>📖 Notes</h2>
+            <img src="images/SEO-tutorial.jpeg" alt="Search Engine Optimization Tutorial" title="SEO Tutorial">
+            <p>SEO (search engine optimization) is the practice of optimizing website performance...</p>
+            <a href="https://www.geeksforgeeks.org/search-engine-optimization-seo-basics/">Read more</a>
         </section>
 
         <section id="previous-papers">
             <h2>📜 Previous Year Question Papers</h2>
-            <p>Database Management System Acadmic year 2023-24.</p>
-            <img src="file:///C:/Users/dell/Desktop/images/database1.jpg">
-           
+            <img src="images/database1.jpg" alt="Database Management System Paper" title="DBMS Previous Year Paper">
         </section>
 
         <section id="assignments">
-            <h2>📝 Syllabus for MCA Student </h2>
-           
-            <img src="file:///C:/Users/dell/Desktop/images/syllabus.png">
-            <a href="https://www.cuchd.in/uic/computing/mca-dev-cc-course-curriculum.php">more</a>
-           
+            <h2>📝 MCA Syllabus</h2>
+            <img src="images/syllabus.png" alt="MCA Course Syllabus" title="MCA Syllabus">
+            <a href="https://www.cuchd.in/uic/computing/mca-dev-cc-course-curriculum.php">View Details</a>
         </section>
 
         <section id="job-portal">
             <h2>💼 Job Portal</h2>
-          
-            <img src="file:///C:/Users/dell/Desktop/images/Job.jpg" class="content-image" onclick="openImage('job1.jpg')">
-            <img src="file:///C:/Users/dell/Desktop/images/job2.png" class="content-image" onclick="openImage('job2.jpg')">
-        </section>
-
-        <section id="query">
-            <h2>❓ Post Your Query</h2>
-            <form id="queryForm">
-                <textarea placeholder="Write your query here..."></textarea><br>
-                <button type="submit">Submit</button>
-            </form>
+            <img src="images/Job.jpg" alt="Job Portal Opportunities" title="Latest Job Opportunities">
         </section>
     </main>
 
     <footer>
-        <p>&copy; Ritu Thakur University Resource Hub. All rights reserved.</p>
+        <p>&copy; Ritu Thakur - University Resource Hub. All rights reserved.</p>
     </footer>
-
-    <script>
-        document.getElementById('queryForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            alert('Your query has been submitted!');
-        });
-
-        function openImage(imageSrc) {
-            window.open(imageSrc, "_blank");
-        }
-    </script>
 
 </body>
 </html>
